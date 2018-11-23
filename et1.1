@@ -1,0 +1,1 @@
+oc describe clusterrolebinding | grep -B2 system:auth | awk {‘print $1 $2’} | grep Role | sed ‘s/Role://g’
